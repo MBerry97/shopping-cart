@@ -7,8 +7,12 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   if(action.type === 'DISCOUNT') {
+    const discount = state.price / 10;
+    const newPrice = state.total - discount
     return {
-      price: state.price - 20
+      ...state,
+      discount: discount,
+      total: newPrice
     }
   }
   return state

@@ -3,15 +3,22 @@ import React from 'react';
 
 function Discount(props) {
 
-const activateDiscount = () => {
-  props.discountItem()
+const activateDiscount = (event) => {
+  event.preventDefault()
+  const discountValue = event.target.discount.value
+  if (discountValue === 'DISCOUNT') {
+     props.discountItem()
+  }
+  
 }
 
   return (
     <div className='discount-container'>
       <span>Apply promo code</span>
-      <input type='text'></input>
-      <button onClick={activateDiscount}>Apply!</button>
+      <form onSubmit={activateDiscount}>
+      <input type='text' name='discount'></input>
+      <input type='submit' value='Apply!' ></input>
+      </form>
     </div>
   );
 }
