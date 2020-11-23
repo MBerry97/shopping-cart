@@ -14,7 +14,7 @@
   margin: auto auto;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30% 40% 30%;
+  grid-template-rows: 30% 50% 20%;
   grid-template-areas:
     'price'
     'item'
@@ -43,4 +43,17 @@
   margin: auto 0;
   background-color: rgb(214, 210, 210);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.ItemToBePurchased-displayContainer img {
+  width: 60%;
+  height: 35%;
+  margin: 0 auto;
+}
+
+.ItemToBePurchased-displayContainer span {
+  margin-top: 5%;
 }
