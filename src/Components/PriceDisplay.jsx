@@ -5,8 +5,8 @@ function PriceDisplay(props) {
   return (
     <div className='PriceDisplay'>
       <span>Sub total: £{props.initialPrice}</span>
-      <span>Discount: £0.00</span>
-      <span>Est. Total: £100</span>
+      <span>Discount: £{props.discount}</span>
+      <span>Est. Total: £{props.total}</span>
     </div>
   );
 }
