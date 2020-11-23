@@ -7,9 +7,23 @@
 }
 
 .ShoppingCart {
-  width: 50%;
+  width: 70%;
   height: 70%;
   border: 1px black solid;
   position: relative;
-  top: 10%;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-areas:
+    'price'
+    'item'
+    'discount';
+}
+
+.PriceDisplay {
+  grid-area: price;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
