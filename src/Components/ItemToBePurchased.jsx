@@ -8,7 +8,7 @@ function ItemToBePurchased(props) {
       <div className='ItemToBePurchased-displayContainer'>
         <img src={item} alt='DJ-decks'></img>
         <span>Pioneer XDJRX2 All In One DJ System for Rekordbox</span>
-        <span>Quantity: 1</span>
+        <span>Quantity: 1 - £100.00</span>
       </div>
     </div>
   );

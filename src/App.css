@@ -57,3 +57,8 @@
 .ItemToBePurchased-displayContainer span {
   margin-top: 5%;
 }
+.discount-container {
+  grid-area: discount;
+  height: 70%;
+  margin: auto 0;
+}
