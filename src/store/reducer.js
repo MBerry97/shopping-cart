@@ -13,7 +13,6 @@ const reducer = (state = initialState, action) => {
       ...state,
       discount: discount,
       total: newPrice,
-
       message: ''
     }
   }

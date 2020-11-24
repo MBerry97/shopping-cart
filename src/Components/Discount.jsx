@@ -8,6 +8,7 @@ const activateDiscount = (event) => {
   const discountValue = event.target.discount.value
   if (discountValue === 'DISCOUNT') {
      props.discountItem()
+     event.target.button.disabled = true;
   } else {
     props.invalidCodeDispatch()
   }
@@ -19,7 +20,7 @@ const activateDiscount = (event) => {
       <span>Apply promo code</span>
       <form onSubmit={activateDiscount}>
       <input type='text' name='discount'></input>
-      <input type='submit' value='Apply!' ></input>
+      <button type='submit' id='button' name='button'>Apply! </button> 
       </form>
       <span>{props.message}</span>
     </div>
