@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid rgb(184, 182, 182);
+  border-bottom: 1px solid rgb(228, 225, 225);
   font-family: 'Lato', sans-serif;
   line-height: 3;
   font-size: 1.2rem;
@@ -35,7 +35,7 @@
 
 .ItemToBePurchased-mainContainer {
   grid-area: item;
-  border-bottom: 1px solid rgb(184, 182, 182);
+  border-bottom: 1px solid rgb(228, 225, 225);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -44,9 +44,9 @@
 .ItemToBePurchased-displayContainer {
   width: 80%;
   height: 70%;
-  border: 2px solid rgb(184, 182, 182);
+  border: 2px solid rgb(230, 227, 227);
   margin: 0 auto;
-  background-color: rgb(236, 233, 233);
+  background-color: rgb(245, 241, 241);
   border-radius: 10px;
   display: flex;
   justify-content: center;

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Discount(props) {
 
 const activateDiscount = (event) => {
@@ -9,6 +8,7 @@ const activateDiscount = (event) => {
   if (discountValue === 'DISCOUNT') {
      props.discountItem()
      event.target.button.disabled = true;
+     document.getElementById('discountAmount').style.color = 'green'
   } else {
     props.invalidCodeDispatch()
   }
