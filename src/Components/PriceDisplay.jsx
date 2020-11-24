@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function PriceDisplay(props) {
+const PriceDisplay = (props) => {
   return (
     <div className='PriceDisplay'>
       <span>Sub total: £{props.initialPrice}</span>

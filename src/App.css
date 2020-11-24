@@ -8,7 +8,7 @@
 
 .ShoppingCart {
   width: 70%;
-  height: 70%;
+  height: 75%;
   box-shadow: 1px 1px 3px 3px rgb(184, 182, 182);
   position: relative;
   margin: auto auto;
@@ -77,6 +77,13 @@
   line-height: 2;
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
+}
+
+#invalidCode-message {
+  color: red;
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 10px;
 }
 
 @media (min-width: 550px) {

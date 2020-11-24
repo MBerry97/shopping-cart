@@ -2,7 +2,7 @@ import React from 'react';
 import item from '../assets/DJ-decks.jpg'
 
 
-function ItemToBePurchased(props) {
+const ItemToBePurchased = (props) => {
   return (
     <div className='ItemToBePurchased-mainContainer'>
       <span>Items in your basket...</span>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Discount(props) {
+const Discount = (props) => {
 
 const activateDiscount = (event) => {
   event.preventDefault()
@@ -22,7 +22,7 @@ const activateDiscount = (event) => {
       <input type='text' name='discount'></input>
       <button type='submit' id='button' name='button'>Apply! </button> 
       </form>
-      <span>{props.message}</span>
+      <span id='invalidCode-message'>{props.message}</span>
     </div>
   );
 }

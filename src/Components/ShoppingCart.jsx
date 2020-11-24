@@ -5,7 +5,7 @@ import Discount from './Discount'
 import {connect} from 'react-redux'
 
 
-function ShoppingCart(props) {
+const ShoppingCart = (props) => {
   return (
     <div className='ShoppingCart'>
       <PriceDisplay initialPrice={props.price} discount={props.discount} total={props.total}/>
