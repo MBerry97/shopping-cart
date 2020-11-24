@@ -12,8 +12,9 @@ See the live version [here](https://shoppingcart-demo.netlify.app/)
 
 1. A choice of multiple items.
 2. A wider selection of discount codes.
-3. A landing page to select items before checkout.
-4. Styling (possibly last after all functionality)
+3. Ability to increase quantity of items.
+4. A landing page to select items before checkout.
+5. Styling (possibly last after all functionality)
 
 ## Diagrams
 
