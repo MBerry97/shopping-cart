@@ -15,4 +15,8 @@ See the live version [here](https://shoppingcart-demo.netlify.app/)
 3. A landing page to select items before checkout.
 4. Styling (possibly last after all functionality)
 
+## Diagrams
+
 ![components](https://github.com/MBerry97/shopping-cart/blob/master/src/assets/Shopping%20Cart%20components.png)
+
+![plan-overview](https://github.com/MBerry97/shopping-cart/blob/master/src/assets/Shopping%20cart%20overview.png)
