@@ -39,6 +39,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .ItemToBePurchased-displayContainer {
@@ -52,6 +54,7 @@
   justify-content: center;
   flex-direction: column;
   max-width: 400px;
+  font-size: 1rem;
 }
 .ItemToBePurchased-displayContainer img {
   width: 60%;
@@ -72,6 +75,8 @@
   height: 70%;
   margin: auto 0;
   line-height: 2;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 550px) {
