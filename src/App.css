@@ -101,8 +101,9 @@
   }
   .ItemToBePurchased-displayContainer img {
     width: 90%;
-    height: 42%;
+    height: 75px;
     margin: auto 15px;
+    max-height: 80px;
   }
 
   .ItemToBePurchased-mainContainer span {

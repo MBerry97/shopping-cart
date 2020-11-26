@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Discount = (props) => {
-
+  
 const activateDiscount = (event) => {
   event.preventDefault()
   const discountValue = event.target.discount.value
