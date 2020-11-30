@@ -20,9 +20,9 @@ useEffect(() => {
           return (
             <div className='displayItems-itemContainer'>
             <ul>
+            <li><img src={item.image} alt={item.name} /></li>
             <li>{item.name}</li>
             <li>{item.price}</li>
-            <li> <img src={item.image} alt={item.name} /></li>
             </ul>
             </div>
           )

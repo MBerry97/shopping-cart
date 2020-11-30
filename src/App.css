@@ -95,6 +95,10 @@
   overflow: hidden;
 }
 
+.displayItems-itemContainer ul {
+  list-style: none;
+}
+
 .displayItems-itemContainer img {
   width: 200px;
 }
