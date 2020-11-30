@@ -2,7 +2,8 @@ const initialState = {
   price: 100.00,
   discount: 0.00,
   total: 100.00,
-  message: ''
+  message: '',
+  items: []
 }
 
 const reducer = (state = initialState, action) => {
@@ -20,6 +21,13 @@ const reducer = (state = initialState, action) => {
     return {
       ...state,
       message: 'Please enter a valid code.'
+    }
+  }
+  if(action.type === 'ITEM') {
+    console.log(action.value)
+    return {
+      ...state,
+      items: action.value
     }
   }
   return state

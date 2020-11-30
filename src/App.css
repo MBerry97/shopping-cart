@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .ShoppingCart {
@@ -83,6 +84,19 @@
   color: red;
   font-size: 0.8rem;
   position: relative;
+}
+
+.displayItems-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.displayItems-itemContainer img {
+  width: 200px;
 }
 
 @media (min-width: 550px) {
