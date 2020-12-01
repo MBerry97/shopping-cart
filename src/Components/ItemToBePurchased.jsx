@@ -7,11 +7,11 @@ const ItemToBePurchased = (props) => {
     <div className='ItemToBePurchased-mainContainer'>
       <span>Items in your basket...</span>
       <div className='ItemToBePurchased-displayContainer'>
-        <img src={item} alt='DJ-decks'></img>
+        <img src={props.itemImage} alt='DJ-decks'></img>
         <div className='Item-details'>
-        <span>Pioneer XDJRX2 All In One DJ System for Rekordbox</span>
+        <span>{props.itemName}</span>
         <span>Quantity: 1 </span>
-         <span> £100.00</span>
+         <span> {props.initialPrice}</span>
         </div>
       </div>
     </div>
