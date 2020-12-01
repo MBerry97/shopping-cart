@@ -12,6 +12,9 @@ useEffect(() => {
   })
 }, [])
 
+const handleClick = (event) => {
+console.log(event.target.alt)
+}
     return (
       <div className='displayItems-container'>
         {props.items.map((item) => {
@@ -19,9 +22,9 @@ useEffect(() => {
           return (
             <div className='displayItems-itemContainer'>
             <ul>
-            <li><img src={item.image} alt={item.name} /></li>
-            <li>{item.name}</li>
-            <li>{item.price}</li>
+            <li><img onClick={handleClick} src={item.image} alt={item.name} key={item.name} /></li>
+            <li key={item.image}>{item.name}</li>
+            <li key={item.price}>{item.price}</li>
             </ul>
             </div>
           )
