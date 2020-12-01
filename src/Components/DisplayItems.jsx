@@ -6,7 +6,6 @@ const DisplayItems = (props) => {
   
 useEffect(() => {
   getItems().then((res) => {
-    console.log(res)
     props.onDisplayItems(res.data)
   }).catch((err) => {
     console.log(err)
