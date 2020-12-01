@@ -10,7 +10,7 @@ useEffect(() => {
   }).catch((err) => {
     console.log(err)
   })
-}, [])
+}, []) // eslint-disable-line react-hooks/exhaustive-deps
 
 const handleClick = (event) => {
 props.onItemClick(event.target.alt)
