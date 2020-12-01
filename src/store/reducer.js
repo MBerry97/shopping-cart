@@ -1,7 +1,7 @@
 const initialState = {
   price: `£0.00`,
   itemName: '',
-  itemImage: '',
+  itemImage: 'https://cdn0.iconfinder.com/data/icons/shopping-and-commerce-vol-1/48/49-512.png',
   discount: `£0.00`,
   total: `£0.00`,
   message: '',
