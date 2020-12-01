@@ -6,7 +6,8 @@ const initialState = {
   total: `£0.00`,
   message: '',
   items: [],
-  itemToDisplay: []
+  itemToDisplay: [],
+  loading: true
 }
 
 const reducer = (state = initialState, action) => {
@@ -34,7 +35,8 @@ const reducer = (state = initialState, action) => {
     console.log(action.value)
     return {
       ...state,
-      items: action.value
+      items: action.value,
+      loading: false
     }
   }
   if(action.type === 'ADD_ITEM_TO_BASKET') {

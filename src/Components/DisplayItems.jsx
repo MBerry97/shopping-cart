@@ -1,20 +1,28 @@
 import React, { useEffect } from 'react';
 import {getItems} from '../axios-requests'
 import {connect} from 'react-redux'
+import Spinner from '../Spinner/Spinner.jsx'
 
 const DisplayItems = (props) => {
   
 useEffect(() => {
   getItems().then((res) => {
     props.onDisplayItems(res.data)
+    
   }).catch((err) => {
     console.log(err)
   })
-}, []) // eslint-disable-line react-hooks/exhaustive-deps
+}, [props.loading]) // eslint-disable-line react-hooks/exhaustive-deps
 
 const handleClick = (event) => {
 props.onItemClick(event.target.alt)
 }
+
+if (props.loading === true) {
+  return (
+    <Spinner />
+  )
+} else {
     return (
       <div className='displayItems-container'>
         {props.items.map((item, i) => {
@@ -31,7 +39,7 @@ props.onItemClick(event.target.alt)
         })}
       </div>
     );
-  
+      }
 }
 
 const mapStatetoProps = (state) => {
@@ -40,7 +48,8 @@ const mapStatetoProps = (state) => {
     discount: state.discount,
     total: state.total,
     message: state.message,
-    items: state.items
+    items: state.items,
+    loading: state.loading
   }
 }
 
