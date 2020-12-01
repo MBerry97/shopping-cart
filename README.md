@@ -12,7 +12,7 @@ Side note - this is a work in progress and new features will be added.
 
 ## Future additions
 
-1. A choice of multiple items. (A hosted back-end that holds item data in which I can make requests to)
+1. A choice of multiple items. (A hosted back-end that holds item data in which I can make requests to) - Complete.
 2. A wider selection of discount codes.
 3. Ability to increase quantity of items.
 4. A landing page to select items before checkout.
