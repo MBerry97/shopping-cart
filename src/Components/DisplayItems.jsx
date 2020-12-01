@@ -45,7 +45,7 @@ const mapStatetoProps = (state) => {
 //configure dispatch actions we can send to the reducer and also pass as a prop
 const mapDispatchtoProps = (dispatch) => {
   return {
-    onDisplayItems: (items) => dispatch({type: 'ITEM', value: items}),
+    onDisplayItems: (items) => dispatch({type: 'GET_ITEMS', value: items}),
   }
 }
 

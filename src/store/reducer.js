@@ -23,7 +23,7 @@ const reducer = (state = initialState, action) => {
       message: 'Please enter a valid code.'
     }
   }
-  if(action.type === 'ITEM') {
+  if(action.type === 'GET_ITEMS') {
     console.log(action.value)
     return {
       ...state,
