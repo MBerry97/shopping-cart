@@ -17,10 +17,10 @@ props.onItemClick(event.target.alt)
 }
     return (
       <div className='displayItems-container'>
-        {props.items.map((item) => {
+        {props.items.map((item, i) => {
           
           return (
-            <div className='displayItems-itemContainer'>
+            <div key={`div${i}`}className='displayItems-itemContainer'>
             <ul>
             <li><img onClick={handleClick} src={item.image} alt={item.name} key={item.name} /></li>
             <li key={item.image}>{item.name}</li>
