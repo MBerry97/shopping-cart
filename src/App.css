@@ -96,6 +96,10 @@
   width: 200px;
   height: 125px;
   margin-top: 25px;
+  transition: ease-in-out;
+}
+.displayItems-itemContainer img:hover {
+  box-shadow: 1px 1px 3px 3px rgb(184, 182, 182);
 }
 
 .displayItems-itemContainer {
@@ -150,5 +154,10 @@
 
   .displayItems-itemContainer img {
     width: 200px;
+  }
+
+  .displayItems-itemContainer {
+    box-shadow: none;
+    border-right: 2px dotted grey;
   }
 }
