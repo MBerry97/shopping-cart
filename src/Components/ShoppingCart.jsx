@@ -9,7 +9,7 @@ const ShoppingCart = (props) => {
   return (
     <div className='ShoppingCart'>
       <PriceDisplay initialPrice={props.price} discount={props.discount} total={props.total}/>
-      <ItemToBePurchased  />
+      <ItemToBePurchased  initialPrice={props.price} itemName={props.itemName} itemImage={props.itemImage}/>
       <Discount discountItem={props.onDiscountedPrice} invalidCodeDispatch={props.onInvalidCode} message={props.message}/>
     </div>
   );
@@ -22,7 +22,9 @@ const mapStatetoProps = (state) => {
     price: state.price,
     discount: state.discount,
     total: state.total,
-    message: state.message
+    message: state.message,
+    itemName: state.itemName,
+    itemImage: state.itemImage
   }
 }
 

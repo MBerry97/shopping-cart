@@ -12,6 +12,9 @@ useEffect(() => {
   })
 }, [])
 
+const handleClick = (event) => {
+props.onItemClick(event.target.alt)
+}
     return (
       <div className='displayItems-container'>
         {props.items.map((item) => {
@@ -19,9 +22,9 @@ useEffect(() => {
           return (
             <div className='displayItems-itemContainer'>
             <ul>
-            <li><img src={item.image} alt={item.name} /></li>
-            <li>{item.name}</li>
-            <li>{item.price}</li>
+            <li><img onClick={handleClick} src={item.image} alt={item.name} key={item.name} /></li>
+            <li key={item.image}>{item.name}</li>
+            <li key={item.price}>{item.price}</li>
             </ul>
             </div>
           )
@@ -46,6 +49,7 @@ const mapStatetoProps = (state) => {
 const mapDispatchtoProps = (dispatch) => {
   return {
     onDisplayItems: (items) => dispatch({type: 'GET_ITEMS', value: items}),
+    onItemClick: (item) => dispatch({type: 'ADD_ITEM_TO_BASKET', value: item})
   }
 }
 
