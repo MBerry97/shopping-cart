@@ -13,7 +13,7 @@ useEffect(() => {
 }, [])
 
 const handleClick = (event) => {
-console.log(event.target.alt)
+props.onItemClick(event.target.alt)
 }
     return (
       <div className='displayItems-container'>
@@ -49,6 +49,7 @@ const mapStatetoProps = (state) => {
 const mapDispatchtoProps = (dispatch) => {
   return {
     onDisplayItems: (items) => dispatch({type: 'GET_ITEMS', value: items}),
+    onItemClick: (item) => dispatch({type: 'ADD_ITEM_TO_BASKET', value: item})
   }
 }
 
