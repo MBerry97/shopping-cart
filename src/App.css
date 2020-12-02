@@ -157,7 +157,11 @@ body {
   height: auto;
 }
 .displayItems-container {
-  margin-bottom: 100px;
+  width: 90%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 30px;
+  margin: auto auto;
 }
 
 @media (min-width: 550px) {
