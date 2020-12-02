@@ -17,7 +17,7 @@ body {
 
 .ShoppingCart {
   width: 95%;
-  height: 70vh;
+  height: 75vh;
   background-color: white;
   border-radius: 30px;
   position: relative;
@@ -53,6 +53,7 @@ body {
   border-radius: 10px;
   margin: 0 auto;
   font-size: 0.7rem;
+  max-width: 400px;
 }
 
 .PriceDisplay-price {
@@ -179,7 +180,7 @@ body {
   }
 
   .ShoppingCart {
-    height: 100vh;
+    height: 90vh;
   }
   .PriceDisplay span {
     font-size: 1rem;
@@ -217,6 +218,11 @@ body {
     margin: auto auto;
     border-radius: 30px;
     background-color: rgb(217, 229, 243);
+  }
+  .displayItems-container span {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
   }
 
   .displayItems-itemContainer img {
