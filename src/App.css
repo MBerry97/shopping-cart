@@ -7,14 +7,17 @@
   flex-direction: column;
   background-color: rgb(217, 229, 243);
 }
+#root {
+  height: 100vh;
+}
 body {
   height: 100%;
   background-color: rgb(217, 229, 243);
 }
 
 .ShoppingCart {
-  width: 85%;
-  height: 70vh;
+  width: 95%;
+  height: 75vh;
   background-color: white;
   border-radius: 30px;
   position: relative;
@@ -30,7 +33,7 @@ body {
 }
 .fa-arrow-left {
   color: orange;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .PriceDisplay {
   grid-area: price;
@@ -40,6 +43,7 @@ body {
   border-bottom: 1px solid rgb(228, 225, 225);
   /* font-family: 'Lato', sans-serif; */
   line-height: 3;
+  font-family: 'Roboto', sans-serif;
 }
 
 .PriceDisplay span {
@@ -49,6 +53,7 @@ body {
   border-radius: 10px;
   margin: 0 auto;
   font-size: 0.7rem;
+  max-width: 400px;
 }
 
 .PriceDisplay-price {
@@ -80,7 +85,7 @@ body {
 }
 .ItemToBePurchased-displayContainer img {
   width: 40%;
-  height: 40%;
+  height: 30%;
   margin: 0 auto;
 }
 
@@ -101,6 +106,7 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
+
   justify-content: center;
 }
 
@@ -137,9 +143,9 @@ body {
 }
 
 .displayItems-itemContainer img {
-  width: 200px;
-  height: 125px;
-  margin-top: 25px;
+  width: 100px;
+  height: 60px;
+
   transition: ease-in-out;
 }
 .displayItems-itemContainer img:hover {
@@ -147,21 +153,25 @@ body {
 }
 
 .displayItems-itemContainer {
-  box-shadow: 1px 1px 3px 3px rgb(184, 182, 182);
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(250, 244, 244);
   height: auto;
 }
+
 .displayItems-container {
   width: 90%;
   height: 80vh;
   background-color: white;
   border-radius: 30px;
   margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 550px) {
@@ -170,7 +180,10 @@ body {
   }
 
   .ShoppingCart {
-    height: 100vh;
+    height: 90vh;
+  }
+  .PriceDisplay span {
+    font-size: 1rem;
   }
   .ItemToBePurchased-displayContainer {
     display: grid;
@@ -199,16 +212,30 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 30%;
-    width: 100%;
+    height: 300px;
+    width: 80%;
+    position: relative;
+    margin: auto auto;
+    border-radius: 30px;
+    background-color: rgb(217, 229, 243);
+  }
+  .displayItems-container span {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
   }
 
   .displayItems-itemContainer img {
     width: 200px;
+    height: 100px;
+    margin-top: 10%;
   }
 
   .displayItems-itemContainer {
     box-shadow: none;
-    border-right: 2px dotted grey;
+    margin: auto 0;
+    height: 200px;
+    width: 30%;
+    border-radius: 30px;
   }
 }

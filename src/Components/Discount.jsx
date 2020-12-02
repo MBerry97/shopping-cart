@@ -21,7 +21,7 @@ const activateDiscount = (event) => {
     <div className='discount-container'>
       <form onSubmit={activateDiscount}>
       <input type='text' name='discount'></input> <br />
-      <span id='invalidCode-message'>{props.message}</span>
+      <span id='invalidCode-message'>{props.message}</span> <br />
       <button type='submit' id='button' name='button'>Apply! </button> 
       </form>
       

@@ -25,7 +25,9 @@ if (props.loading === true) {
   )
 } else {
     return (
+      
       <div className='displayItems-container'>
+        <span>Select your item</span>
         {props.items.map((item, i) => {
           
           return (

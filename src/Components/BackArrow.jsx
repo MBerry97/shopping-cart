@@ -5,7 +5,7 @@ const BackArrow = (props) => {
   return (
     <div>
       <Link to='/'>
-      <span> <i class="fas fa-arrow-left"></i></span>
+      <span> <i className="fas fa-arrow-left"></i></span>
       </Link>
     </div>
   );
