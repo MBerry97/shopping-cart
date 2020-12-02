@@ -7,6 +7,10 @@
   flex-direction: column;
   background-color: rgb(217, 229, 243);
 }
+body {
+  height: 100%;
+  background-color: rgb(217, 229, 243);
+}
 
 .ShoppingCart {
   width: 70%;
