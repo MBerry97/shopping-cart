@@ -8,7 +8,9 @@ const activateDiscount = (event) => {
   if (discountValue === 'DISCOUNT') {
      props.discountItem()
      event.target.button.disabled = true;
-     document.getElementById('discountAmount').style.color = 'green'
+     document.getElementById('discountAmount').style.backgroundColor = '#C7F9E0'
+     
+     document.getElementById('discountAmountPrice').style.backgroundColor = '#C7F9E0'
   } else {
     props.invalidCodeDispatch()
   }
@@ -17,12 +19,12 @@ const activateDiscount = (event) => {
 
   return (
     <div className='discount-container'>
-      <span>Apply promo code</span>
       <form onSubmit={activateDiscount}>
-      <input type='text' name='discount'></input>
+      <input type='text' name='discount'></input> <br />
+      <span id='invalidCode-message'>{props.message}</span>
       <button type='submit' id='button' name='button'>Apply! </button> 
       </form>
-      <span id='invalidCode-message'>{props.message}</span>
+      
     </div>
   );
 }

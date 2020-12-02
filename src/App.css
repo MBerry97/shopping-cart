@@ -5,14 +5,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: rgb(217, 229, 243);
 }
 
 .ShoppingCart {
   width: 70%;
-  height: 85vh;
-  box-shadow: 1px 1px 3px 3px rgb(184, 182, 182);
+  height: 70vh;
+  background-color: white;
+  border-radius: 30px;
   position: relative;
-  margin: auto auto;
+  margin: 0 auto 10px auto;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 30% 50% 20%;
@@ -26,12 +28,24 @@
 .PriceDisplay {
   grid-area: price;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   border-bottom: 1px solid rgb(228, 225, 225);
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   line-height: 3;
-  font-size: 1.2rem;
+}
+
+.PriceDisplay span {
+  background-color: rgb(250, 244, 244);
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
+
+.PriceDisplay-price {
+  font-family: 'Lato', sans-serif;
 }
 
 .ItemToBePurchased-mainContainer {
@@ -47,9 +61,9 @@
 .ItemToBePurchased-displayContainer {
   width: 80%;
   height: 70%;
-  border: 2px solid rgb(230, 227, 227);
+
   margin: 0 auto;
-  background-color: rgb(245, 241, 241);
+  background-color: rgb(250, 244, 244);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -58,8 +72,8 @@
   font-size: 1rem;
 }
 .ItemToBePurchased-displayContainer img {
-  width: 60%;
-  height: 35%;
+  width: 40%;
+  height: 40%;
   margin: 0 auto;
 }
 
@@ -78,12 +92,35 @@
   line-height: 1.5;
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #invalidCode-message {
   color: red;
   font-size: 0.8rem;
   position: relative;
+}
+
+#button {
+  color: rgb(255, 255, 255);
+  width: 50%;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: rgba(157, 157, 157, 0.43) 0px 6px 11px 1px;
+  background-image: linear-gradient(
+    to right,
+    rgb(114, 116, 241) 0%,
+    rgb(123, 165, 255) 77%,
+    rgb(151, 177, 255) 100%
+  );
+  /* box-shadow: rgba(157, 157, 157, 0.43) 0px 6px 11px 1px; */
+  display: inline-block;
+}
+#button:hover {
+  background: #7274f1;
 }
 
 .displayItems-itemContainer ul {

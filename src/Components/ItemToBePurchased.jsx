@@ -5,7 +5,7 @@ import item from '../assets/DJ-decks.jpg'
 const ItemToBePurchased = (props) => {
   return (
     <div className='ItemToBePurchased-mainContainer'>
-      <span>Items in your basket...</span>
+      <span>My Cart 🛍️</span>
       <div className='ItemToBePurchased-displayContainer'>
         <img src={props.itemImage} alt='DJ-decks'></img>
         <div className='Item-details'>
