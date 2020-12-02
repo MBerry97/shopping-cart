@@ -28,12 +28,24 @@
 .PriceDisplay {
   grid-area: price;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   border-bottom: 1px solid rgb(228, 225, 225);
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   line-height: 3;
-  font-size: 1.2rem;
+}
+
+.PriceDisplay span {
+  background-color: rgb(250, 244, 244);
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
+
+.PriceDisplay-price {
+  font-family: 'Lato', sans-serif;
 }
 
 .ItemToBePurchased-mainContainer {
@@ -60,8 +72,8 @@
   font-size: 1rem;
 }
 .ItemToBePurchased-displayContainer img {
-  width: 60%;
-  height: 35%;
+  width: 40%;
+  height: 40%;
   margin: 0 auto;
 }
 
