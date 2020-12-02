@@ -7,14 +7,18 @@
   flex-direction: column;
   background-color: rgb(217, 229, 243);
 }
+body {
+  height: 100%;
+  background-color: rgb(217, 229, 243);
+}
 
 .ShoppingCart {
-  width: 70%;
+  width: 85%;
   height: 70vh;
   background-color: white;
   border-radius: 30px;
   position: relative;
-  margin: 0 auto 10px auto;
+  margin: auto auto;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 30% 50% 20%;
@@ -24,7 +28,10 @@
     'discount';
   max-width: 550px;
 }
-
+.fa-arrow-left {
+  color: orange;
+  font-size: 0.7rem;
+}
 .PriceDisplay {
   grid-area: price;
   display: flex;

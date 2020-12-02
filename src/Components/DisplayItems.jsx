@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import {getItems} from '../axios-requests'
 import {connect} from 'react-redux'
 import Spinner from '../Spinner/Spinner.jsx'
+import {Link } from "@reach/router"
 
 const DisplayItems = (props) => {
   
@@ -30,7 +31,9 @@ if (props.loading === true) {
           return (
             <div key={`div${i}`}className='displayItems-itemContainer'>
             <ul>
+              <Link to='/checkout'>
             <li><img onClick={handleClick} src={item.image} alt={item.name} key={item.name} /></li>
+            </Link>
             <li key={item.image}>{item.name}</li>
             <li key={item.price}>{item.price}</li>
             </ul>
