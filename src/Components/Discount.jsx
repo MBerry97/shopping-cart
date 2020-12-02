@@ -17,12 +17,12 @@ const activateDiscount = (event) => {
 
   return (
     <div className='discount-container'>
-      <span>Apply promo code</span>
       <form onSubmit={activateDiscount}>
-      <input type='text' name='discount'></input>
+      <input type='text' name='discount'></input> <br />
+      <span id='invalidCode-message'>{props.message}</span>
       <button type='submit' id='button' name='button'>Apply! </button> 
       </form>
-      <span id='invalidCode-message'>{props.message}</span>
+      
     </div>
   );
 }
