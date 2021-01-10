@@ -30,6 +30,7 @@ if (props.loading === true) {
       <Spring
     from={{opacity: 0, marginRight: -500}}
     to={{opacity: 1, marginRight: 0}}
+    config={{delay: 600}}
     >
      {style => (
        <div style={style}>
