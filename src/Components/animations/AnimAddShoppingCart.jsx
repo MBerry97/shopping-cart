@@ -1,7 +1,7 @@
 import React from 'react';
-
 import Lottie from 'react-lottie';
 import animationData from '../../assets/animations/add-shopping-cart.json';
+
 
 const AnimAddShoppingCart = () => {
   const defaultOptions = {
