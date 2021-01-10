@@ -7,7 +7,8 @@ const initialState = {
   message: '',
   items: [],
   itemToDisplay: [],
-  loading: true
+  loading: true,
+  checkout: false,
 }
 
 const reducer = (state = initialState, action) => {
@@ -46,8 +47,14 @@ const reducer = (state = initialState, action) => {
      itemName: selectedItem[0].name,
      itemImage: selectedItem[0].image,
      total: selectedItem[0].price,
-     discount: `£0.00`
+     discount: `£0.00`,
+     checkout: true
    };
+   case 'RETURN_HOME':
+     return {
+       ...state,
+       checkout: false
+     };
    default:  return state
   }
   
