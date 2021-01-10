@@ -3,6 +3,7 @@ import {getItems} from '../axios-requests'
 import {connect} from 'react-redux'
 import Spinner from '../Spinner/Spinner.jsx'
 import {Link } from "@reach/router"
+import {Spring} from 'react-spring/renderprops'
 
 
 const DisplayItems = (props) => {
@@ -26,8 +27,13 @@ if (props.loading === true) {
   )
 } else {
     return (
-      
-      <div className='displayItems-container'>
+      <Spring
+    from={{opacity: 0, marginRight: -500}}
+    to={{opacity: 1, marginRight: 0}}
+    >
+     {style => (
+       <div style={style}>
+        <div className='displayItems-container'>
         <span>Select your item</span>
         {props.items.map((item, i) => {
           
@@ -44,6 +50,10 @@ if (props.loading === true) {
           )
         })}
       </div>
+       </div>
+     )}
+    </Spring>
+      
       
     );
       }
