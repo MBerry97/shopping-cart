@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import Spinner from '../Spinner/Spinner.jsx'
 import {Link } from "@reach/router"
 
+
 const DisplayItems = (props) => {
   
 useEffect(() => {
@@ -43,6 +44,7 @@ if (props.loading === true) {
           )
         })}
       </div>
+      
     );
       }
 }
@@ -54,7 +56,7 @@ const mapStatetoProps = (state) => {
     total: state.total,
     message: state.message,
     items: state.items,
-    loading: state.loading
+    loading: state.loading,
   }
 }
 
@@ -64,6 +66,8 @@ const mapDispatchtoProps = (dispatch) => {
   return {
     onDisplayItems: (items) => dispatch({type: 'GET_ITEMS', value: items}),
     onItemClick: (item) => dispatch({type: 'ADD_ITEM_TO_BASKET', value: item})
+   
+
   }
 }
 

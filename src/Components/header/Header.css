@@ -1,0 +1,21 @@
+.header-container {
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-contentContainer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 550px) {
+  /* .header-container {
+    bottom: 215px;
+  } */
+}

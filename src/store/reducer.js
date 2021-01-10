@@ -7,11 +7,13 @@ const initialState = {
   message: '',
   items: [],
   itemToDisplay: [],
-  loading: true
+  loading: true,
+  checkout: false,
 }
 
 const reducer = (state = initialState, action) => {
-  if(action.type === 'DISCOUNT') {
+  switch(action.type) {
+    case 'DISCOUNT':
     const priceAsNumber = state.price.slice(1, state.price.length)
     const totalAsNumber = state.total.slice(1, state.total.length)
     
@@ -23,25 +25,20 @@ const reducer = (state = initialState, action) => {
       discount: `£${discount}`,
       total: `£${newPrice}`,
       message: ''
-    }
-  }
-  if(action.type === 'INV_CODE') {
-    return {
+    };
+    case 'INV_CODE':
+      return {
       ...state,
       message: 'Please enter a valid code.'
-    }
-  }
-  if(action.type === 'GET_ITEMS') {
-    console.log(action.value)
-    return {
+    };
+    case 'GET_ITEMS':
+     return {
       ...state,
       items: action.value,
       loading: false
-    }
-  }
-  if(action.type === 'ADD_ITEM_TO_BASKET') {
-   
-   let selectedItem = state.items.filter(item => {
+    };
+    case 'ADD_ITEM_TO_BASKET': 
+    let selectedItem = state.items.filter(item => {
      return item.name === action.value
    })
    return {
@@ -50,10 +47,17 @@ const reducer = (state = initialState, action) => {
      itemName: selectedItem[0].name,
      itemImage: selectedItem[0].image,
      total: selectedItem[0].price,
-     discount: `£0.00`
-   }
+     discount: `£0.00`,
+     checkout: true
+   };
+   case 'RETURN_HOME':
+     return {
+       ...state,
+       checkout: false
+     };
+   default:  return state
   }
-  return state
+  
 }
 
 
