@@ -3,6 +3,7 @@ import {getItems} from '../axios-requests'
 import {connect} from 'react-redux'
 import Spinner from '../Spinner/Spinner.jsx'
 import {Link } from "@reach/router"
+import Header from './header/Header';
 
 const DisplayItems = (props) => {
   
@@ -43,6 +44,7 @@ if (props.loading === true) {
           )
         })}
       </div>
+      
     );
       }
 }
