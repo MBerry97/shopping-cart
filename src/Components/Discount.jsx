@@ -9,8 +9,10 @@ const activateDiscount = (event) => {
      props.discountItem()
      event.target.button.disabled = true;
      document.getElementById('discountAmount').style.backgroundColor = '#C7F9E0'
-     
      document.getElementById('discountAmountPrice').style.backgroundColor = '#C7F9E0'
+     document.getElementById('button').style.backgroundColor = 'black'
+     document.getElementById('button').style.color = 'orange'
+
   } else {
     props.invalidCodeDispatch()
   }

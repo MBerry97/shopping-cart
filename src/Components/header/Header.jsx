@@ -5,12 +5,10 @@ import './Header.css'
 import {connect} from 'react-redux'
 
 const Header = (props) => {
-  const HeaderDiv = <div className='header-contentContainer'></div>
 
   return (
     <div className='header-container'>
-      
-      {props.checkout ? <div className='header-contentContainer'><span>Checkout</span> <AnimAddShoppingCart /></div>  :  <div className='header-contentContainer'><span>Shop</span><AnimShoppingCart /></div>  }
+      {props.checkout ? <div className='header-contentContainer'><span>Checkout</span> <AnimAddShoppingCart /></div>  :  <div className='header-contentContainer'><span>$hop</span><AnimShoppingCart /></div>  }
     </div>
   );
 }

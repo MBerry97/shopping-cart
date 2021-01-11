@@ -11,6 +11,7 @@ const ShoppingCart = (props) => {
     <Spring
     from={{opacity: 0, marginLeft: -500}}
     to={{opacity: 1, marginLeft: 0}}
+    config={{delay: 600}}
     >
      {style => (
        <div style={style}>
