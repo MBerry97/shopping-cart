@@ -44,7 +44,7 @@ if (props.loading === true) {
             <li><img onClick={handleClick} src={item.image} alt={item.name} key={item.name} /></li>
             </Link>
             <li key={item.image}>{item.name}</li>
-            <li key={item.price}>{item.price}</li>
+            <li id='itemPrice' key={item.price}>{item.price}</li>
             </ul>
             </div>
           )
