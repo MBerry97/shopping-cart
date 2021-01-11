@@ -2,16 +2,27 @@ import React from 'react';
 import PriceDisplay from './PriceDisplay'
 import ItemToBePurchased from './ItemToBePurchased'
 import Discount from './Discount'
+import {Spring} from 'react-spring/renderprops'
 import {connect} from 'react-redux'
 
 
 const ShoppingCart = (props) => {
   return (
-    <div className='ShoppingCart'>
+    <Spring
+    from={{opacity: 0, marginLeft: -500}}
+    to={{opacity: 1, marginLeft: 0}}
+    >
+     {style => (
+       <div style={style}>
+       <div className='ShoppingCart'>
       <PriceDisplay initialPrice={props.price} discount={props.discount} total={props.total} returnHome={props.onReturnHome}/>
       <ItemToBePurchased  initialPrice={props.price} itemName={props.itemName} itemImage={props.itemImage}/>
       <Discount discountItem={props.onDiscountedPrice} invalidCodeDispatch={props.onInvalidCode} message={props.message}/>
     </div>
+       </div>
+     )}
+    </Spring>
+    
   );
 }
 
