@@ -35,7 +35,6 @@ if (props.loading === true) {
      {style => (
        <div style={style}>
         <div className='displayItems-container'>
-        <span>Select your item</span>
         {props.items.map((item, i) => {
           
           return (
