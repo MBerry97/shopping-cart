@@ -11,7 +11,7 @@ const ItemToBePurchased = (props) => {
         <div className='Item-details'>
         <span>{props.itemName}</span>
         <span>Quantity: 1 </span>
-         <span> {props.initialPrice}</span>
+         <span id='itemPrice-Cart'> {props.initialPrice}</span>
         </div>
       </div>
     </div>

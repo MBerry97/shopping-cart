@@ -22,7 +22,7 @@ const AnimAddShoppingCart = () => {
     >
      {style => (
        <div style={style}>
-        <div>
+        <div className='addAnimCart'>
       <Lottie 
 	    options={defaultOptions}
         height={85}
